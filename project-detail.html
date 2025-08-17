@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Muhammad Asad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="project-detail.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Muhammad Asad</div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="hamburger-nav">
+        <div class="logo">Muhammad Asad</div>
+  
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Project Details Content -->
+    <section class="project-detail-section">
+        <div class="container">
+            <!-- Project Header -->
+            <div class="project-header">
+                <div class="project-image-container">
+                    <img id="project-image" src="" alt="Project Image" class="project-main-image">
+                </div>
+                <div class="project-info-header">
+                    <h1 id="project-title">Project Title</h1>
+                    <span id="project-category" class="project-category">Category</span>
+                    <p id="project-description">Project description will appear here</p>
+                </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="project-details">
+                <!-- Technologies Section -->
+                <div class="detail-section">
+                    <h2>Technologies Used</h2>
+                    <div id="technologies-list" class="technologies-grid">
+                        <!-- Technologies will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Features Section -->
+                <div class="detail-section">
+                    <h2>Key Features</h2>
+                    <ul id="features-list" class="features-list">
+                        <!-- Features will be loaded here -->
+                    </ul>
+                </div>
+
+                <!-- Project Images Gallery -->
+                <div class="detail-section" id="images-section" style="display: none;">
+                    <h2>Project Screenshots</h2>
+                    <div id="project-images" class="project-images-gallery">
+                        <!-- Project images will be loaded here -->
+                    </div>
+                </div>
+
+                <!-- Video Demo Section -->
+                <div class="detail-section" id="video-section" style="display: none;">
+                    <h2>Project Demo Video</h2>
+                    <div class="video-container">
+                        <iframe id="project-video" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Project Links -->
+                <div class="detail-section">
+                    <h2>Project Links</h2>
+                    <div class="project-links">
+                        <a id="github-link" href="" target="_blank" class="project-link-btn github-btn">
+                            <img src="./assets/github.png" alt="GitHub" class="link-icon">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Back to Projects Button -->
+            <div class="back-to-projects">
+                <a href="index.html#projects" class="btn btn-color-1">← Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2025 Muhammad Asad. All Rights Reserved.</p>
+      </footer>
+    <script src="script.js"></script>
+    <script src="project-detail.js"></script>
+</body>
+</html>
