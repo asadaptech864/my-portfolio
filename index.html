@@ -14,6 +14,7 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -31,6 +32,7 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
@@ -39,14 +41,14 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="Muhammad Asad profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Muhammad Asad</h1>
         <p class="section__text__p2">Full Stack Developer</p>
         <div class="btn-container">
-        <a href="./assets/Muhammad Asad.pdf" class="btn btn-color-2" download="Muhammad Asad.pdf">
+        <a href="./assets/Muhammad Asad.pdf" class="btn btn-color-2" download="Muhammad Asad.pdf" style="text-decoration: none;">
           Download CV
         </a>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -54,76 +56,83 @@
           </button>
         </div>
         <div id="socials-container">
+          <a href="https://www.linkedin.com/in/muhammad-asad-864" target="_blank">
           <img
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
           />
+        </a>
+        <a href="https://github.com/asadaptech864" target="_blank">
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
           />
+        </a>
         </div>
       </div>
     </section>
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
+      <div class="about-container">
+        <div class="about-cards-section">
+          <div class="about-card">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>1+ years <br />Full Stack Development</p>
           </div>
-          <div class="text-container">
+          <div class="about-card">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>Software Engineering Diploma<br />Aptech Learning</p>
+          </div>
+          <div class="about-card">
+            <img
+              src="./assets/checkmark.png"
+              alt="Languages icon"
+              class="icon"
+            />
+            <h3>Languages</h3>
+            <p>Urdu (Native)<br />English (Fluent)</p>
+          </div>
+        </div>
+        
+        <div class="about-summary-section">
+          <div class="summary-section">
+            <h3>Professional Summary</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
+              I am a <strong>Full-stack Developer</strong> specializing in <strong>MERN Stack</strong> and <strong>PHP</strong>, with professional experience at <strong>Anomoz Software</strong> as a Junior PHP Developer and Intern.
             </p>
+            <p>
+              I excel at building <strong>dynamic, scalable web applications</strong>, integrating <strong>APIs</strong>, and managing <strong>databases</strong>. Proficient in <strong>React</strong>, <strong>Node.js</strong>, <strong>Express</strong>, <strong>MongoDB</strong>, and modern front-end frameworks.
+            </p>
+            <p>
+              I bring strong <strong>problem-solving</strong> and <strong>collaboration skills</strong> to every project, with expertise in:
+            </p>
+            <ul class="expertise-list">
+              <li>Responsive UI development</li>
+              <li>CRUD operations</li>
+              <li>API integrations (Dropbox, Eventbrite)</li>
+              <li>Database design and optimization</li>
+            </ul>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
-    <section id="experience">
+    <section id="skills">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
         <div class="about-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
@@ -131,128 +140,278 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Skill icon"
                   class="icon"
                 />
                 <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+                  <h3>HTML & CSS</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar advanced"></span>
+                    <span class="skill-text">Advanced</span>
+                  </div>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Skill icon"
                   class="icon"
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <div class="skill-level">
+                    <span class="skill-bar advanced"></span>
+                    <span class="skill-text">Advanced</span>
+                  </div>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Skill icon"
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
+                  <h3>React.js</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar intermediate"></span>
+                    <span class="skill-text">Intermediate</span>
+                  </div>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Skill icon"
                   class="icon"
                 />
                 <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <h3>Bootstrap</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar advanced"></span>
+                    <span class="skill-text">Advanced</span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar intermediate"></span>
+                    <span class="skill-text">Intermediate</span>
+                  </div>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Backend & Database</h2>
             <div class="article-container">
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="Experience icon"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar advanced"></span>
+                    <span class="skill-text">Advanced</span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar intermediate"></span>
+                    <span class="skill-text">Intermediate</span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express.js</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar intermediate"></span>
+                    <span class="skill-text">Intermediate</span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar advanced"></span>
+                    <span class="skill-text">Advanced</span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar intermediate"></span>
+                    <span class="skill-text">Intermediate</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools & Others</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar advanced"></span>
+                    <span class="skill-text">Advanced</span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Postman</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar intermediate"></span>
+                    <span class="skill-text">Intermediate</span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>.NET MVC</h3>
+                  <div class="skill-level">
+                    <span class="skill-bar basic"></span>
+                    <span class="skill-text">Basic</span>
+                  </div>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Skill icon"
                   class="icon"
                 />
                 <div>
                   <h3>PostgreSQL</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
+                  <div class="skill-level">
+                    <span class="skill-bar basic"></span>
+                    <span class="skill-text">Basic</span>
+                  </div>
                 </div>
               </article>
             </div>
           </div>
         </div>
+        <div class="soft-skills-container">
+          <h2 class="experience-sub-title">Soft Skills</h2>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Problem Solving</span>
+            </div>
+            <div class="soft-skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Team Collaboration</span>
+            </div>
+            <div class="soft-skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Time Management</span>
+            </div>
+            <div class="soft-skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Critical Thinking</span>
+            </div>
+            <div class="soft-skill-item">
+              <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+              <span>Adaptability</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-marker current"></div>
+            <div class="timeline-content">
+              <h3 class="job-title">Junior PHP Developer</h3>
+              <h4 class="company-name">Anomoz Software</h4>
+              <p class="job-period">March 2024 - Present</p>
+              <div class="job-description">
+                <ul>
+                  <li>Designed user-friendly interfaces using Bootstrap and CSS</li>
+                  <li>Integrated Dropbox and Eventbrite APIs for file handling and event management</li>
+                  <li>Participated in bug fixing and feature updates for live applications</li>
+                  <li>Managed database relationships and complex queries (joins, group counts, total calculations)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="job-title">Intern - PHP Developer</h3>
+              <h4 class="company-name">Anomoz Software</h4>
+              <p class="job-period">November 2023 - February 2024</p>
+              <div class="job-description">
+                <ul>
+                  <li>Worked with responsive UI logic (showing/hiding headers based on screen size)</li>
+                  <li>Developed CRUD modules for services, pricing plans, trainers, and bookings</li>
+                  <li>Implemented JSON data handling for complex data</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
@@ -263,21 +422,23 @@
             <div class="article-container">
               <img
                 src="./assets/project-1.png"
-                alt="Project 1"
+                alt="Hotel Management System"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Hotel Management System</h2>
+            <p class="project-description">Full-stack web application for hotel operations with booking management, analytics, feedback system, and payment integration using Stripe and OAuth.</p>
+            <p class="project-tech"><strong>Technologies:</strong> Express.js, Node.js, Next.js, MongoDB, Stripe, OAuth</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/asadaptech864'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://asadaptech864.github.io/my-portfolio/'"
               >
                 Live Demo
               </button>
@@ -287,21 +448,23 @@
             <div class="article-container">
               <img
                 src="./assets/project-2.png"
-                alt="Project 2"
+                alt="E-commerce Platform"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">E-commerce Platform</h2>
+            <p class="project-description">Modern e-commerce solution with user authentication, product management, shopping cart, and secure payment processing.</p>
+            <p class="project-tech"><strong>Technologies:</strong> React.js, Node.js, Express.js, MongoDB, JWT</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/asadaptech864'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://asadaptech864.github.io/my-portfolio/'"
               >
                 Live Demo
               </button>
@@ -311,21 +474,23 @@
             <div class="article-container">
               <img
                 src="./assets/project-3.png"
-                alt="Project 3"
+                alt="Task Management App"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <h2 class="experience-sub-title project-title">Task Management App</h2>
+            <p class="project-description">Collaborative task management application with real-time updates, user roles, and progress tracking features.</p>
+            <p class="project-tech"><strong>Technologies:</strong> PHP, MySQL, Bootstrap, JavaScript, AJAX</p>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/asadaptech864'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://asadaptech864.github.io/my-portfolio/'"
               >
                 Live Demo
               </button>
@@ -333,12 +498,6 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
@@ -350,7 +509,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:asad.riaz.tech@gmail.com">asad.riaz.tech@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -358,7 +517,23 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/muhammad-asad-864" target="_blank">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+          />
+          <p><a href="tel:+923070216587">+92 307 0216587</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="Portfolio icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://asadaptech864.github.io/my-portfolio/" target="_blank">Portfolio</a></p>
         </div>
       </div>
     </section>
@@ -367,13 +542,14 @@
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Muhammad Asad. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
   </body>
