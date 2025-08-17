@@ -154,18 +154,40 @@
 
 /* Project Images Gallery */
 .project-images-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
     gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.project-images-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-images-gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.project-images-gallery::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 4px;
+}
+
+.project-images-gallery::-webkit-scrollbar-thumb:hover {
+    background: #45a049;
 }
 
 .gallery-image {
-    width: 100%;
+    width: 300px;
     height: 200px;
     object-fit: cover;
     border-radius: 1rem;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-shrink: 0;
 }
 
 .gallery-image:hover {
@@ -178,7 +200,6 @@
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
     border-radius: 1rem;
     overflow: hidden;
 }
@@ -190,6 +211,59 @@
     width: 100%;
     height: 100%;
     border-radius: 1rem;
+}
+
+/* Project Videos Gallery */
+.project-videos-gallery {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.project-videos-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.project-videos-gallery::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.project-videos-gallery::-webkit-scrollbar-thumb {
+    background: #4CAF50;
+    border-radius: 4px;
+}
+
+.project-videos-gallery::-webkit-scrollbar-thumb:hover {
+    background: #45a049;
+}
+
+.gallery-video {
+    width: 400px;
+    height: 225px;
+    border-radius: 1rem;
+    flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    line-height: 0;
+}
+
+.gallery-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    display: block;
+}
+
+.gallery-video:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Project Links */
