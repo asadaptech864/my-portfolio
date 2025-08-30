@@ -1,5 +1,45 @@
 // Projects Data - Yahan aap apne saare projects ki information add kar sakte hain
 const projectsData = {
+    'whatsapp-ai-agent': {
+        title: "WhatsApp AI Agent Workflow (n8n)",
+        category: "Automation / AI Integration",
+        description: "An n8n workflow that connects a WhatsApp Trigger to an AI Agent powered by Google Gemini with simple memory and Google Sheets tools for FAQs, services lookup, and order saving, then replies back on WhatsApp.",
+        image: "./assets/phone.webp",
+        technologies: [
+            "n8n",
+            "WhatsApp Cloud API",
+            "Google Gemini (Generative AI)",
+            "Google Sheets API",
+            "AI Agent / Tools",
+            "Webhooks",
+            "JavaScript"
+        ],
+        features: [
+            "WhatsApp inbound message trigger and automated replies",
+            "AI Agent responses using Google Gemini Chat Model",
+            "Simple conversational memory for better context",
+            "FAQ retrieval from Google Sheets (read: sheet)",
+            "Services lookup from Google Sheets (read: sheet)",
+            "Order capture and append to Google Sheets (append: sheet)",
+            "Configurable tools exposed to the AI Agent",
+            "Low-code orchestration using n8n with reusable nodes",
+            "Production-friendly with environment variables and secrets"
+        ],
+        video: [
+            "./assets/n8n google ai.mp4"
+        ],
+        image: "./assets/Screenshot 2025-08-29 205721.png",
+        additionalImages: [
+            "./assets/Screenshot 2025-08-29 205721.png",
+            "./assets/Screenshot 2025-08-29 205751.png",
+            "./assets/Screenshot 2025-08-29 205827.png",
+            "./assets/Screenshot 2025-08-29 205841.png",
+            "./assets/Screenshot 2025-08-29 210106.png",
+            "./assets/Screenshot 2025-08-29 205859.png"
+        ],
+        github: "https://github.com/asadaptech864"
+    },
+    
     'hotel-management': {
         title: "Hotel Management System",
         category: "Full Stack Web Application",
@@ -126,46 +166,8 @@ const projectsData = {
         //     "./assets/project-3.png",
         //     "./assets/project-1.png"
         // ]
-    },
-    'whatsapp-ai-agent': {
-        title: "WhatsApp AI Agent Workflow (n8n)",
-        category: "Automation / AI Integration",
-        description: "An n8n workflow that connects a WhatsApp Trigger to an AI Agent powered by Google Gemini with simple memory and Google Sheets tools for FAQs, services lookup, and order saving, then replies back on WhatsApp.",
-        image: "./assets/phone.webp",
-        technologies: [
-            "n8n",
-            "WhatsApp Cloud API",
-            "Google Gemini (Generative AI)",
-            "Google Sheets API",
-            "AI Agent / Tools",
-            "Webhooks",
-            "JavaScript"
-        ],
-        features: [
-            "WhatsApp inbound message trigger and automated replies",
-            "AI Agent responses using Google Gemini Chat Model",
-            "Simple conversational memory for better context",
-            "FAQ retrieval from Google Sheets (read: sheet)",
-            "Services lookup from Google Sheets (read: sheet)",
-            "Order capture and append to Google Sheets (append: sheet)",
-            "Configurable tools exposed to the AI Agent",
-            "Low-code orchestration using n8n with reusable nodes",
-            "Production-friendly with environment variables and secrets"
-        ],
-        video: [
-            "./assets/n8n google ai.mp4"
-        ],
-        image: "./assets/Screenshot 2025-08-29 205721.png",
-        additionalImages: [
-            "./assets/Screenshot 2025-08-29 205721.png",
-            "./assets/Screenshot 2025-08-29 205751.png",
-            "./assets/Screenshot 2025-08-29 205827.png",
-            "./assets/Screenshot 2025-08-29 205841.png",
-            "./assets/Screenshot 2025-08-29 210106.png",
-            "./assets/Screenshot 2025-08-29 205859.png"
-        ],
-        github: "https://github.com/asadaptech864"
     }
+    
 };
 
 // Get project ID from URL

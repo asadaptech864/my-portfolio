@@ -156,6 +156,23 @@ section {
   min-height: fit-content;
 }
 
+/* Mobile Responsive for Sections */
+@media (max-width: 768px) {
+  section {
+    margin: 0 2rem;
+    padding-top: 2vh;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    margin: 0 1rem;
+    padding-top: 1vh;
+  }
+}
+
 .section-container {
   display: flex;
 }
@@ -399,6 +416,286 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+/* Projects Scroll Container - Enhanced User-Friendly Design */
+.projects-scroll-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  padding: 0 4rem;
+  max-width: 100%;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.projects-container {
+  display: flex;
+  gap: 2.5rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.projects-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.projects-container .details-container {
+  min-width: 380px;
+  flex-shrink: 0;
+  background: white;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .projects-scroll-container {
+    padding: 0 1rem;
+    margin: 2rem 0;
+  }
+  
+  .projects-container {
+    gap: 1.5rem;
+    padding: 1rem 0.5rem;
+  }
+  
+  .projects-container .details-container {
+    min-width: 280px;
+    max-width: 320px;
+  }
+  
+  .projects-container .project-title {
+    font-size: 1.2rem;
+    margin: 1rem 0.8rem 0.8rem 0.8rem;
+  }
+  
+  .projects-container .project-description {
+    font-size: 0.9rem;
+    margin: 0.8rem;
+    min-height: 50px;
+  }
+  
+  .projects-container .project-tech {
+    font-size: 0.8rem;
+    margin: 0.8rem;
+    padding: 0.6rem;
+  }
+  
+  .projects-container .project-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    margin: 0.8rem;
+  }
+  
+  .scroll-arrow {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .arrow-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .scroll-left {
+    left: 0.5rem;
+  }
+  
+  .scroll-right {
+    right: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-scroll-container {
+    padding: 0 0.5rem;
+    margin: 1.5rem 0;
+  }
+  
+  .projects-container {
+    gap: 1rem;
+    padding: 0.8rem 0.3rem;
+  }
+  
+  .projects-container .details-container {
+    min-width: 250px;
+    max-width: 280px;
+  }
+  
+  .projects-container .project-title {
+    font-size: 1.1rem;
+    margin: 0.8rem 0.6rem 0.6rem 0.6rem;
+  }
+  
+  .projects-container .project-description {
+    font-size: 0.85rem;
+    margin: 0.6rem;
+    min-height: 45px;
+  }
+  
+  .projects-container .project-tech {
+    font-size: 0.75rem;
+    margin: 0.6rem;
+    padding: 0.5rem;
+  }
+  
+  .projects-container .project-btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    margin: 0.6rem;
+  }
+  
+  .scroll-arrow {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .arrow-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.projects-container .details-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #4CAF50, #45a049, #2E7D32);
+}
+
+.projects-container .details-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  border-color: #4CAF50;
+}
+
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: 3px solid #4CAF50;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.scroll-arrow:hover {
+  background: #4CAF50;
+  border-color: #4CAF50;
+  transform: translateY(-50%) scale(1.15);
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+}
+
+.scroll-arrow:hover .arrow-icon {
+  filter: brightness(0) invert(1);
+}
+
+.scroll-left {
+  left: 1rem;
+}
+
+.scroll-right {
+  right: 1rem;
+}
+
+.arrow-icon {
+  width: 25px;
+  height: 25px;
+  transition: all 0.3s ease;
+}
+
+/* Remove rotation for left arrow since we're using proper back arrow image */
+.scroll-left .arrow-icon {
+  transform: none;
+}
+
+.scroll-left img {
+  transform: none;
+}
+
+/* Enhanced Project Card Styling */
+.projects-container .project-img {
+  border-radius: 15px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.projects-container .details-container:hover .project-img {
+  transform: scale(1.05);
+}
+
+.projects-container .project-title {
+  margin: 1.5rem 1rem 1rem 1rem;
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.projects-container .project-description {
+  margin: 1rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 0.95rem;
+  min-height: 60px;
+}
+
+.projects-container .project-tech {
+  margin: 1rem;
+  color: #4CAF50;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.projects-container .project-btn {
+  color: white;
+  background: #4CAF50;
+  border: 2px solid #4CAF50;
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  margin: 1rem;
+}
+
+.projects-container .project-btn:hover {
+  background: #45a049;
+  border-color: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
 }
 
 .about-details-container {
